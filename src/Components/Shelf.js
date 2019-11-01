@@ -1,13 +1,12 @@
 import React from 'react'
-import Books from './Books'
+import Book from './Book'
 
-function Shelf({ shelf, booksList }) {
-
+function Shelf({ title, shelf, booksList }) {
   return (
     <div className='shelf'>
-      <h1>{shelf}</h1>
+      <h1>{title}</h1>
       <div className='books-container'>
-        <Books booksList={booksList} />
+        {booksList.map(book => book.shelf === shelf && <Book key={book.id} book={book} />)}
       </div>
     </div>
   )
