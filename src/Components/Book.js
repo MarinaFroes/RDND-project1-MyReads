@@ -1,9 +1,14 @@
 import React from 'react'
+import dropdown from '../icons/dropdown.svg'
 
 function Book({ book }) {
   return (
     <div className='book-info'>
-      <img src={book.imageLinks.smallThumbnail} alt=''/>
+      <div className='cover-container'>
+        <img src={book.imageLinks.smallThumbnail} alt='' />
+        <img src={`${dropdown}`} alt='' className='dropdown-icon' />
+      </div>
+      
       <p>Title: {book.title}</p>
       {/* {book.subtitle && <p>Subtitle: {book.subtitle}</p>} */}
       <p>Authors: {book.authors}</p>
