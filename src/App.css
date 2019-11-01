@@ -1,3 +1,23 @@
 .App {
   text-align: center;
 }
+
+.book-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  border: 3px solid red;
+}
+
+.shelf {
+  border: 3px solid green;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  border: 3px solid blue;
+}
