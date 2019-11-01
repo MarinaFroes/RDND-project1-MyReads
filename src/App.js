@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './App.css'
 import * as BooksAPI from './utils/BooksAPI'
 import Shelves from './Components/Shelves'
+import AddBar from './Components/AddBar'
+// import arrowback from './icons/arrowback.svg'
 
 class App extends Component {
   state = {
@@ -19,10 +21,16 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <main className='App'>
         <h1>MyReads</h1>
-        <Shelves booksList={this.state.books}/>
-      </div>
+        <Shelves booksList={this.state.books} />
+
+       <AddBar />
+       
+        {/* <img src={`${arrowback}`} alt='' style={{ height: '50px', backgroundColor: '#000', borderRadius: '50%'}}/> */}
+        
+
+      </main>
     )
   }
 }
