@@ -4,20 +4,25 @@
 
 .book-info {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0;
+  flex-wrap: wrap;
+  width: 15rem;
+  margin: 0 3rem;
+  padding: 2rem;
   border: 3px solid red;
 }
 
 .shelf {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
   border: 3px solid green;
 }
 
 .books-container {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   border: 3px solid blue;
 }
