@@ -88,14 +88,17 @@
   box-shadow: 4px 3px 14px 0 rgba(179,179,204,1);
   background-color: #fff;
   /* border: 1px solid red; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.drop-down-menu p{
+.drop-down-menu li{
   padding: 10px;
   margin: 0;
 }
 
-.drop-down-menu p:hover {
+.drop-down-menu li:hover {
   background-color: #e6e6e6;
   cursor: pointer;
 }
