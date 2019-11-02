@@ -1,9 +1,17 @@
 // import React from 'react'
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import dropdown from '../icons/dropdown.svg'
 import DropDown from './DropDown'
 
+
 class Book extends Component {
+  
+  static propTypes = {
+    book: PropTypes.object.isRequired,
+    onUpdateBook: PropTypes.func.isRequired
+  }
+
   state = {
     clicked: false
   }
