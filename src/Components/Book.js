@@ -6,7 +6,6 @@ import DropDown from './DropDown'
 
 
 class Book extends Component {
-  
   static propTypes = {
     book: PropTypes.object.isRequired,
     onUpdateBook: PropTypes.func.isRequired
@@ -39,7 +38,7 @@ class Book extends Component {
         <h2 className='book-title'>{book.title}</h2>
         {/* {book.subtitle && <p>Subtitle: {book.subtitle}</p>} */}
         <p><strong>Authors:</strong> {book.authors}</p>
-        <p><strong>Rate::</strong> {book.averageRating || "No rating"}</p>
+        <p><strong>Rate:</strong> {book.averageRating || "No rating"}</p>
         <p>Shelf: {book.shelf}</p>
       </div>
     )
@@ -64,4 +63,4 @@ class Book extends Component {
 //   )
 // }
 
-export default Book
+export default Book;
