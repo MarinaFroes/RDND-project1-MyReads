@@ -1,35 +1,51 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
-.book-info {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 15rem;
-  margin: 0 3rem;
-  padding: 2rem;
-  border: 3px solid red;
-}
+/* Shelf Component */
 
 .shelf {
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
-  border: 3px solid green;
+  padding: 1rem 3rem;
+  /* border: 3px solid green; */
+}
+
+.shelf-title {
+  border-bottom: 2px solid #e6e6e6;
+  padding: 0.5rem;
 }
 
 .books-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
+}
+
+/* Book Component */
+
+.book-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 14rem;
+  margin: 0 1rem;
+  padding: 2rem;
+  /* border: 3px solid red; */
+  box-shadow: 4px 3px 14px 0px rgba(179,179,204,1);
+  border-radius: 0.5rem;
 }
 
 .cover-container {
   position: relative;
   margin: 1rem;
+}
+
+.book-title {
+  font-size: 1rem;
 }
 
 .dropdown-icon {
@@ -41,11 +57,16 @@
   border-radius: 50%;
 }
 
+/* AddBar Component */
+
 .add-icon {
   height: 50px;
   width: 50px;
   background-color: #000;
   border-radius: 50%;
-  text-align: right;
   margin: 1rem;
+  position: fixed;
+  box-shadow: 6px 6px 15px -6px rgba(0,0,0,0.75);
+  bottom: 0;
+  right: 0;
 }
