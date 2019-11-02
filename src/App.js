@@ -24,11 +24,8 @@ class App extends Component {
 
   updateBook(book, shelf) {
     BooksAPI.update(book, shelf)
-      .then(books => {
-        this.setState(() => ({
-          books
-        }))
-      })
+      .then(data => console.log(data))
+      // TODO: Update books
   }
 
   updateQuery = query => {
@@ -56,7 +53,6 @@ class App extends Component {
         <SearchBar
           query={query}
           onUpdateQuery={this.updateQuery}
-
         />
         <Shelves
           showingBooks={showingBooks}
