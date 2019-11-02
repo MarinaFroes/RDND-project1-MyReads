@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Shelf from './Shelf'
 import { SHELVES_TYPES } from '../utils/SHELVES_TYPES'
 
-function Shelves({ booksList, onUpdateBook }) {
+function Shelves({ showingBooks, onUpdateBook }) {
   return (
     <div>
       {
@@ -11,7 +11,7 @@ function Shelves({ booksList, onUpdateBook }) {
           <Shelf 
             title={shelf[0]} 
             shelf={shelf[1]} 
-            booksList={booksList} 
+            showingBooks={showingBooks} 
             key={shelf} 
             onUpdateBook={onUpdateBook}
           />
@@ -24,6 +24,6 @@ function Shelves({ booksList, onUpdateBook }) {
 export default Shelves
 
 Shelves.propTypes = {
-  booksList: PropTypes.array.isRequired,
+  showingBooks: PropTypes.array.isRequired,
   onUpdateBook: PropTypes.func.isRequired
 }

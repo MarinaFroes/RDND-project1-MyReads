@@ -56,9 +56,10 @@ class App extends Component {
         <SearchBar
           query={query}
           onUpdateQuery={this.updateQuery}
+
         />
         <Shelves
-          booksList={books}
+          showingBooks={showingBooks}
           onUpdateBook={this.updateBook}
         />
        <AddBar />
