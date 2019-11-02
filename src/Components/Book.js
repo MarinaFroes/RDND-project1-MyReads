@@ -9,7 +9,7 @@ function Book({ book }) {
         <img src={`${dropdown}`} alt='' className='dropdown-icon' />
       </div>
       
-      <p>Title: {book.title}</p>
+      <h2 className='book-title'>{book.title}</h2>
       {/* {book.subtitle && <p>Subtitle: {book.subtitle}</p>} */}
       <p>Authors: {book.authors}</p>
       <p>Rate: {book.averageRating || "No rating"}</p>
