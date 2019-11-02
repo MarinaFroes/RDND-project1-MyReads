@@ -14,7 +14,11 @@ class Book extends Component {
     return (
       <div className='book-info'>
         <div className='cover-container'>
-          <img src={book.imageLinks.smallThumbnail} alt='' />
+          <img
+            className='cover-img'
+            src={book.imageLinks.smallThumbnail}
+            alt=''
+          />
           <img
             src={`${dropdown}`}
             alt=''
