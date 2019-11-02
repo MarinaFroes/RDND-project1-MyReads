@@ -9,7 +9,8 @@ import Header from './Components/Header'
 
 class App extends Component {
   state = {
-    books: []
+    books: [],
+    query: ''
   }
 
   componentDidMount() {
@@ -30,12 +31,36 @@ class App extends Component {
       })
   }
 
+  updateQuery = query => {
+    this.setState(() => ({
+      query: query.trim()
+    }))
+  }
+
+  clearQuery = () => {
+    this.updateQuery('')
+  }
+
   render() {
+    const { query, books } = this.state
+
+    const showingBooks = query === ''
+      ? books
+      : books.filter(b => (
+        b.title.toLowerCase().includes(query.toLowerCase())
+      ))
+
     return (
       <main className='App'>
         <Header title='MyReads' />
-        <SearchBar />
-        <Shelves booksList={this.state.books} onUpdateBook={this.updateBook}/>
+        <SearchBar
+          query={query}
+          onUpdateQuery={this.updateQuery}
+        />
+        <Shelves
+          booksList={books}
+          onUpdateBook={this.updateBook}
+        />
        <AddBar />
         {/* <img src={`${arrowback}`} alt='' style={{ height: '50px', backgroundColor: '#000', borderRadius: '50%'}}/> */}
       </main>
