@@ -19,11 +19,20 @@ class App extends Component {
       })
   }
 
+  updateBook(book, shelf) {
+    BooksAPI.update(book, shelf)
+      .then(books => {
+        this.setState(() => ({
+          books
+        }))
+      })
+  }
+
   render() {
     return (
       <main className='App'>
         <h1>MyReads</h1>
-        <Shelves booksList={this.state.books} />
+        <Shelves booksList={this.state.books} onUpdateBook={this.updateBook}/>
 
        <AddBar />
        
