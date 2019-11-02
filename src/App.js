@@ -47,7 +47,7 @@ class App extends Component {
     const showingBooks = query === ''
       ? books
       : books.filter(b => (
-        b.title.toLowerCase().includes(query.toLowerCase())
+        b.title.toLowerCase().includes(query.toLowerCase()) || b.authors.join('').toLowerCase().includes(query.toLowerCase())
       ))
 
     return (
