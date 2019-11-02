@@ -16,11 +16,11 @@ function SearchBar({ query, onUpdateQuery }) {
           name='search-bar'
           id='search-bar'
           value={query}
-          placeholder='Search book title...'
+          placeholder='Search book title or author...'
           onChange={event => onUpdateQuery(event.target.value)}
         />
       </form>
-      <p>{query}</p>
+      {/* <p>{query}</p> */}
     </>
   )
 }
