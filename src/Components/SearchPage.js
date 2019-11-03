@@ -4,12 +4,10 @@ import SearchBar from './SearchBar'
 
 function SearchPage({query, onUpdateQuery}) {
   return (
-    <>
-      <SearchBar
-        query={query}
-        onUpdateQuery={onUpdateQuery}
-      /> 
-    </>
+    <SearchBar
+      query={query}
+      onUpdateQuery={onUpdateQuery}
+    /> 
   )
 }
 
