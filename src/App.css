@@ -61,7 +61,7 @@ form {
 
 .book-info {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   width: 14rem;
@@ -100,7 +100,7 @@ form {
   border-radius: 50%;
 } */
 
-.dropdown-icon {
+/* .dropdown-icon {
   position: absolute;
   bottom: -1.5rem;
   right: -1.5rem;
@@ -109,33 +109,34 @@ form {
   border-radius: 50%;
   box-shadow: 4px 3px 14px 0 rgba(179,179,204,1);
   z-index: 10;
-}
+} */
 
 /* Dropdown menu */
-
-.drop-down-menu {
-  position: absolute;
-  right: -10rem;
-  bottom: -8rem;
-  z-index: 5;
+.drop-down-menu-container {
+  /* position: absolute;
+  right: 0;
+  bottom: 0; */
+ 
+  align-self: flex-end;
   width: 10rem;
   text-align: left;
   font-size: 1rem;
-  border-radius: 5px;
-  box-shadow: 4px 3px 14px 0 rgba(179,179,204,1);
-  background-color: #fff;
-  /* border: 1px solid red; */
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* 
+  border-radius: 50%;
+  background: #60ac5d;
+  background-image: url('./icons/dropdown.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px; */
+ 
 }
 
-.drop-down-menu li{
+.drop-down-menu option{
   padding: 10px;
   margin: 0;
 }
 
-.drop-down-menu li:hover {
+.drop-down-menu option:hover {
   background-color: #e6e6e6;
   cursor: pointer;
 }
