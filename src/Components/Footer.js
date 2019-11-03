@@ -11,6 +11,7 @@ function Footer() {
           className='icon'
           href='https://github.com/MarinaFroes'
           target='_blank'
+          rel='noopener noreferrer'
         >
           {<FaGithub />}
         </a>
@@ -18,6 +19,7 @@ function Footer() {
           className='icon'
           href='https://www.linkedin.com/in/marina-froes-a-costa/'
           target='_blank'
+          rel='noopener noreferrer'
         >
           {<FaLinkedin />}
         </a>
@@ -25,6 +27,7 @@ function Footer() {
           className='icon'
           href='mailto:facosta.marina@gmail.com'
           target='_blank'
+          rel='noopener noreferrer'
         >
           {<FaEnvelope />}
         </a>
@@ -32,6 +35,7 @@ function Footer() {
           className='icon'
           href='https://marinafroes.github.io/Portfolio/'
           target='_blank'
+          rel='noopener noreferrer'
         >
           <img src={mylogo} alt=''/>
         </a>
