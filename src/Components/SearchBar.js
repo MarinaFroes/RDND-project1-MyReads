@@ -1,16 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import arrowback from '../icons/arrowback.svg'
+import { Link } from 'react-router-dom'
 
 function SearchBar({ query, onUpdateQuery }) {
   return (
     <>
       <form>
-        <img
-          src={`${arrowback}`}
-          alt=''
-          className='arrowback-icon'
-        />
+        <Link to='/'>
+          <img
+            src={`${arrowback}`}
+            alt=''
+            className='arrowback-icon'
+          />
+        </Link>
         <input
           type='text'
           name='search-bar'
@@ -20,7 +23,7 @@ function SearchBar({ query, onUpdateQuery }) {
           onChange={event => onUpdateQuery(event.target.value)}
         />
       </form>
-      {/* <p>{query}</p> */}
+      <p>{query}</p>
     </>
   )
 }
