@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Route } from 'react-router-dom'
 import './App.css'
 import * as BooksAPI from './utils/BooksAPI'
 import Shelves from './Components/Shelves'
@@ -49,16 +50,29 @@ class App extends Component {
     return (
       <div className='App'>
         <Header title='MyReads' />
-        {/* <SearchPage
-          query={query}
-          onUpdateQuery={this.updateQuery}
-        /> */}
-        <Shelves
-          showingBooks={showingBooks}
-          onUpdateBook={this.updateBook}
+        <Route
+          exact
+          path='/'
+          render={() => (
+            <main>
+              <Shelves
+                showingBooks={showingBooks}
+                onUpdateBook={this.updateBook}
+              />
+              <SearchIcon />
+            </main>
+          )}
         />
-       <SearchIcon />
-        {/* <img src={`${arrowback}`} alt='' style={{ height: '50px', backgroundColor: '#000', borderRadius: '50%'}}/> */}
+        <Route
+          exact
+          path='/search'
+          render={() => (
+            <SearchPage
+              query={query}
+              onUpdateQuery={this.updateQuery}
+            />
+          )}
+        />
         <Footer />
       </div>
     )
