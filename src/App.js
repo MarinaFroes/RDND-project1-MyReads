@@ -19,8 +19,8 @@ class App extends Component {
   }
 
   updateBook = (book, shelf) => {
-    BooksAPI.update(book, shelf);
-    this.fetchData()
+    BooksAPI.update(book, shelf)
+      .then(() => this.fetchData())
   }
 
   updateQuery = query => {
