@@ -12,7 +12,7 @@ class Book extends Component {
   }
 
   state = {
-    clicked: false
+    isClicked: false
   }
 
   render() {
@@ -30,9 +30,9 @@ class Book extends Component {
             src={`${dropdown}`}
             alt=''
             className='dropdown-icon'
-            onClick={() => this.setState({ clicked: !this.state.clicked })}
+            onClick={() => this.setState({ isClicked: !this.state.isClicked })}
           />
-          {this.state.clicked && <DropDown book={book} onUpdateBook={onUpdateBook}/>}
+          {this.state.isClicked && <DropDown book={book} onUpdateBook={onUpdateBook}/>}
         </div>
 
         <h2 className='book-title'>{book.title}</h2>
