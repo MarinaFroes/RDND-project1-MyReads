@@ -6,6 +6,7 @@ import SearchIcon from './Components/SearchIcon'
 // import arrowback from './icons/arrowback.svg'
 import SearchPage from './Components/SearchPage'
 import Header from './Components/Header'
+import Footer from './Components/Footer'
 
 class App extends Component {
   state = {
@@ -46,7 +47,7 @@ class App extends Component {
       ))
 
     return (
-      <main className='App'>
+      <div className='App'>
         <Header title='MyReads' />
         {/* <SearchPage
           query={query}
@@ -58,7 +59,8 @@ class App extends Component {
         />
        <SearchIcon />
         {/* <img src={`${arrowback}`} alt='' style={{ height: '50px', backgroundColor: '#000', borderRadius: '50%'}}/> */}
-      </main>
+        <Footer />
+      </div>
     )
   }
 }
