@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import mylogo from '../icons/mylogo.svg'
 
 function Footer() {
   return (
@@ -26,6 +27,13 @@ function Footer() {
           target='_blank'
         >
           {<FaEnvelope />}
+        </a>
+        <a
+          className='icon'
+          href='https://marinafroes.github.io/Portfolio/'
+          target='_blank'
+        >
+          <img src={mylogo} alt=''/>
         </a>
       </div>
     </footer>
