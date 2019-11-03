@@ -5,7 +5,7 @@ import { SHELVES_TYPES } from '../utils/SHELVES_TYPES'
 
 function Shelves({ showingBooks, onUpdateBook }) {
   return (
-    <div>
+    <section>
       {
         SHELVES_TYPES.map( shelf => (
           <Shelf 
@@ -17,7 +17,7 @@ function Shelves({ showingBooks, onUpdateBook }) {
           />
         ))
       }
-    </div>
+    </section>
   )
 }
 
