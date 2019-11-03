@@ -11,7 +11,7 @@ function Shelf({ showingBooks, onUpdateBook }) {
           <div key={shelf[1]} className='shelf'>
             <h1 className='shelf-title'>{shelf[0]}</h1>
             <div className='books-container'>
-              {showingBooks.filter(book => book.shelf === shelf[1]).map(book => <Book key={book.id} book={book} onUpdateBook={onUpdateBook}/>)}
+              {showingBooks.filter(book => book.shelf === shelf[1]).map(book => <Book key={book.id} book={book} onUpdateBook={onUpdateBook} currentShelf={shelf[1]}/>)}
             </div>
           </div>
          )
