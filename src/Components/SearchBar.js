@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import magnifyingglass from '../icons/magnifyingglass.svg'
+import arrowback from '../icons/arrowback.svg'
 
 function SearchBar({ query, onUpdateQuery }) {
   return (
     <>
       <form>
         <img
-          src={`${magnifyingglass}`}
+          src={`${arrowback}`}
           alt=''
-          className='magnifying-glass-icon'
+          className='arrowback-icon'
         />
         <input
           type='text'
