@@ -6,7 +6,6 @@ function Header({ title }) {
   return (
     <header>
       <div className='header-icon'><FaBookReader /></div>
-      
       <h1>{title}</h1>
     </header>
   )
