@@ -16,6 +16,6 @@ function SearchPage({query, onUpdateQuery}) {
 export default SearchPage
 
 SearchPage.propTypes = {
-  query: PropTypes.object.isRequired,
+  query: PropTypes.string.isRequired,
   onUpdateQuery: PropTypes.func.isRequired
 }
