@@ -19,7 +19,7 @@ class Book extends Component {
     const { book, onUpdateBook } = this.props;
 
     return (
-      <div className='book-info'>
+      <section className='book-info'>
         <div className='cover-container'>
           <img
             className='cover-img'
@@ -42,7 +42,7 @@ class Book extends Component {
         {/* <p><strong>Rate:</strong> {book.averageRating || "No rating"}</p> */}
         {/* <p>Shelf: {book.shelf}</p> */}
         <DropDown book={book} onUpdateBook={onUpdateBook} />
-      </div>
+      </section>
     )
   }
 }
