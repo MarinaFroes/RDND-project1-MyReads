@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="15.362121mm"
-   height="16.685623mm"
-   viewBox="0 0 15.362121 16.685623"
+   width="15.750722mm"
+   height="17.101322mm"
+   viewBox="0 0 15.750722 17.101322"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
-   sodipodi:docname="magnifying-glass.svg">
+   sodipodi:docname="magnifyingglass.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,10 +26,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="25.482696"
-     inkscape:cy="21.332871"
+     inkscape:cx="46.6959"
+     inkscape:cy="15.761162"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g849"
      showgrid="false"
      inkscape:window-width="1280"
      inkscape:window-height="691"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,8 +58,9 @@
       <path
          inkscape:connector-curvature="0"
          id="path815"
-         d="m 55.45118,86.51053 a 5,5 0 0 0 -7.06125,-0.371223 5,5 0 0 0 -0.371566,7.060869 5,5 0 0 0 6.051899,1.069689 c 0.0068,0.0081 0.01133,0.01722 0.01844,0.02512 l 5.752453,6.391505 c 0.367715,0.40857 0.992662,0.44146 1.401226,0.0737 0.408565,-0.36771 0.441452,-0.992662 0.07374,-1.401227 L 55.605839,93.014357 A 5,5 0 0 0 55.45118,86.51053 Z"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         d="m 55.45118,86.51053 c -1.847412,-2.052395 -5.00882,-2.218596 -7.06125,-0.371223 -2.052247,1.847278 -2.218595,5.008398 -0.371566,7.060869 1.534202,1.700581 4.027703,2.141314 6.051899,1.069689 0.0068,0.0081 0.01133,0.01722 0.01844,0.02512 l 4.713018,6.816725 c 0.698444,0.7393 2.032097,0.0162 2.440661,-0.35152 0.408565,-0.36771 1.173781,-1.630497 0.357222,-2.582403 l -5.993765,-5.16343 C 57.164553,91.10469 57.098903,88.343949 55.45118,86.51053 Z"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5291667;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:nodetypes="cccccccccc" />
       <circle
          transform="rotate(48.012312)"
          r="3.7989712"
