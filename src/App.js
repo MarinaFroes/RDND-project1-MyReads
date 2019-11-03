@@ -15,27 +15,27 @@ class App extends Component {
   }
 
   componentDidMount() {
-    BooksAPI.getAll()
-      .then(books => {
-        this.setState(() => ({
-          books
-        }))
-      })
+    this.fetchData()
   }
 
-  updateBook(book, shelf) {
-    BooksAPI.update(book, shelf)
+  updateBook = (book, shelf) => {
+    BooksAPI.update(book, shelf);
+    this.fetchData()
   }
 
   updateQuery = query => {
     this.setState(() => ({
       query: query.trim()
     }))
-    console.log('updateQuery was called');
   }
 
-  clearQuery = () => {
-    this.updateQuery('')
+  fetchData = () => {
+    BooksAPI.getAll()
+      .then(books => {
+        this.setState({
+          books
+        })
+      })
   }
 
   render() {
