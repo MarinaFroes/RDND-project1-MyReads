@@ -16,6 +16,14 @@ header {
   margin: 0 1rem;
 }
 
+.app-title {
+  text-decoration: none;
+}
+
+.app-title:visited {
+  color: #000;
+}
+
 /* Search Bar Component */
 form {
   display: flex;
