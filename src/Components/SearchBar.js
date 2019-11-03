@@ -17,7 +17,7 @@ function SearchBar({ query, onUpdateQuery }) {
         <input
           type='text'
           name='search-bar'
-          id='search-bar'
+          className='search-bar'
           value={query}
           placeholder='Search book title or author...'
           onChange={event => onUpdateQuery(event.target.value)}
@@ -27,37 +27,6 @@ function SearchBar({ query, onUpdateQuery }) {
     </>
   )
 }
-
-// class SearchBar extends Component {
-//   static propTypes = {
-//     query: PropTypes.string.isRequired,
-//     onUpdateQuery: PropTypes.func.isRequired
-//   }
-//   render() {
-//     // const { query } = this.state
-//     const { query, onUpdateQuery } = this.props
-//     return (
-//       <>
-//       <form onSubmit={this.handleSubmit}>
-//         <img
-//           src={`${magnifyingglass}`}
-//           alt=''
-//           className='magnifying-glass-icon'
-//         />
-//         <input
-//           type='text'
-//           name='search-bar'
-//           id='search-bar'
-//           value={query}
-//           placeholder='Search book title...'
-//           onChange={event => onUpdateQuery(event.target.value)}
-//         />
-//         </form>
-//         <p>{query}</p>
-//       </>
-//     )
-//   }
-// }
 
 export default SearchBar;
 
