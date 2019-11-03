@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import './App.css'
 import * as BooksAPI from './utils/BooksAPI'
-import Shelves from './Components/Shelves'
+import Shelf from './Components/Shelf'
 import SearchIcon from './Components/SearchIcon'
 import SearchPage from './Components/SearchPage'
 import Header from './Components/Header'
@@ -31,6 +31,7 @@ class App extends Component {
     this.setState(() => ({
       query: query.trim()
     }))
+    console.log('updateQuery was called');
   }
 
   clearQuery = () => {
@@ -54,7 +55,7 @@ class App extends Component {
           path='/'
           render={() => (
             <main>
-              <Shelves
+              <Shelf
                 showingBooks={showingBooks}
                 onUpdateBook={this.updateBook}
               />
@@ -66,10 +67,19 @@ class App extends Component {
           exact
           path='/search'
           render={() => (
-            <SearchPage
-              query={query}
-              onUpdateQuery={this.updateQuery}
-            />
+            <>
+              <SearchPage
+                query={query}
+                onUpdateQuery={this.updateQuery}
+              />
+              {
+                query !== '' &&
+                <Shelf
+                showingBooks={showingBooks}
+                onUpdateBook={this.updateBook}
+                />
+              }
+            </>
           )}
         />
         <Footer />
