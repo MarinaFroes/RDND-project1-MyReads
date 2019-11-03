@@ -28,6 +28,11 @@ class App extends Component {
       query: query.trim()
     }))
   }
+  
+  // TODO: Implement clearQuery() method
+  // clearQuery = () => {
+  //   this.updateQuery('')
+  // }
 
   fetchData = () => {
     BooksAPI.getAll()
