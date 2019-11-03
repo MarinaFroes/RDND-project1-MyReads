@@ -24,8 +24,6 @@ class App extends Component {
 
   updateBook(book, shelf) {
     BooksAPI.update(book, shelf)
-      .then(data => console.log(data))
-      // TODO: Update books
   }
 
   updateQuery = query => {
