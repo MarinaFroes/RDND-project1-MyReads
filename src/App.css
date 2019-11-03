@@ -141,16 +141,22 @@ form {
   cursor: pointer;
 }
 
-/* AddBar Component */
+/* SearchIcon Component */
 
-.add-icon {
-  height: 50px;
-  width: 50px;
+.search-icon {
+  height: 2rem;
+  width: 2rem;
+  padding: 10px;
+  margin: 1rem;
   background-color: #000;
   border-radius: 50%;
-  margin: 1rem;
+  background-image: url('./icons/magnifyingglass.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
   position: fixed;
-  box-shadow: 6px 6px 15px -6px rgba(0,0,0,0.75);
   bottom: 0;
   right: 0;
+  box-shadow: 6px 6px 15px -6px rgba(0,0,0,0.75);
+  cursor: pointer;
 }
