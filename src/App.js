@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import './App.css'
 import * as BooksAPI from './utils/BooksAPI'
 import Shelves from './Components/Shelves'
-import AddBar from './Components/AddBar'
+import SearchIcon from './Components/SearchIcon'
 // import arrowback from './icons/arrowback.svg'
-import SearchBar from './Components/SearchBar'
+import SearchPage from './Components/SearchPage'
 import Header from './Components/Header'
 
 class App extends Component {
@@ -48,15 +48,15 @@ class App extends Component {
     return (
       <main className='App'>
         <Header title='MyReads' />
-        <SearchBar
+        {/* <SearchPage
           query={query}
           onUpdateQuery={this.updateQuery}
-        />
+        /> */}
         <Shelves
           showingBooks={showingBooks}
           onUpdateBook={this.updateBook}
         />
-       <AddBar />
+       <SearchIcon />
         {/* <img src={`${arrowback}`} alt='' style={{ height: '50px', backgroundColor: '#000', borderRadius: '50%'}}/> */}
       </main>
     )
