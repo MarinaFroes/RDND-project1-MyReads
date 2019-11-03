@@ -185,6 +185,11 @@ footer {
   margin: 0 1rem;
 }
 
+.icon img {
+  height: 1.5rem;
+  margin: 0;
+}
+
 .icon-container {
   display: flex;
   justify-content: center;
