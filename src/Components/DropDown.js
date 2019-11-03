@@ -1,23 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { SHELVES_TYPES } from '../utils/SHELVES_TYPES'
-// import dropdown from '../icons/dropdown.svg'
 
 function DropDown({ book, onUpdateBook }) {
   return (
-    <ul className='drop-down-menu' role="menubar">
-      {/* <img src={`${dropdown}`} alt='' className='dropdown-icon' /> */}
-      {SHELVES_TYPES.map(shelf => ( 
-        <li
-          key={shelf[1]}
-          id={shelf[1]}
-          role='menuitem'
-          onClick={() => onUpdateBook(book, shelf[1])}
-        >
-          {shelf[0]}
-        </li>
-      ))}
-    </ul>
+    <div className='drop-down-container'>
+      <select
+        className='drop-down-menu'
+        role="menubar"
+        onChange={event => onUpdateBook(book, event.target.value)}
+      >
+        {SHELVES_TYPES.map(shelf => ( 
+          <option
+            key={shelf[1]}
+            value={shelf[1]}
+            role='menuitem'
+            selected={book.shelf === shelf[1]}
+          >
+            {shelf[0]}
+          </option>
+        ))}
+      </select>
+    </div>
   )
 }
 
