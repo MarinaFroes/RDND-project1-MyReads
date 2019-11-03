@@ -6,6 +6,14 @@
 /* Header Component */
 header {
   margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header-icon {
+  font-size: 2rem;
+  color: red;
+  margin: 0 1rem;
 }
 
 /* Search Bar Component */
