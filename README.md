@@ -70,4 +70,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## References
 
 - Shadow generator: [CSSmatic](https://cssmatic.com/box-shadow)
+- Font Awesome icons: [React Icons](https://react-icons.netlify.com/#/icons/fa)
 - React: [React Documentation](https://reactjs.org)
