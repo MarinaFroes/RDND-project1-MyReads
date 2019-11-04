@@ -29,10 +29,9 @@ class App extends Component {
     }))
   }
   
-  // TODO: Implement clearQuery() method
-  // clearQuery = () => {
-  //   this.updateQuery('')
-  // }
+    clearQuery = () => {
+      this.updateQuery('')
+   }
 
   fetchData = () => {
     BooksAPI.getAll()
@@ -76,6 +75,7 @@ class App extends Component {
               <SearchPage
                 query={query}
                 onUpdateQuery={this.updateQuery}
+                onClearQuery={this.clearQuery}
               />
               {
                 query !== '' &&
