@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import arrowback from '../icons/arrowback.svg'
 import { Link } from 'react-router-dom'
 
-function SearchBar({ query, onUpdateQuery }) {
+function SearchBar({ query, onUpdateQuery, onClearQuery }) {
   return (
     <form>
       <Link to='/'>
@@ -11,6 +11,7 @@ function SearchBar({ query, onUpdateQuery }) {
           src={`${arrowback}`}
           alt=''
           className='arrowback-icon'
+          onClick={() => onClearQuery()}
         />
       </Link>
       <input
@@ -29,5 +30,6 @@ export default SearchBar;
 
 SearchBar.propTypes = {
   query: PropTypes.string.isRequired,
-  onUpdateQuery: PropTypes.func.isRequired
+  onUpdateQuery: PropTypes.func.isRequired,
+  onClearQuery: PropTypes.func.isRequired
 }
