@@ -13,7 +13,7 @@ function Book({ book, onUpdateBook, currentShelf }) {
         />
       </div>
       <h2 className='book-title'>{book.title}</h2>
-      <p><strong>Authors:</strong> {book.authors.join(', ')}</p>
+      <p><strong>Authors:</strong> {book.authors ? book.authors.join(', ') : 'author not found'}</p>
       <ShelfSelection
         book={book}
         onUpdateBook={onUpdateBook}
