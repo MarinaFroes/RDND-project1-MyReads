@@ -11,7 +11,8 @@ import Footer from './Components/Footer'
 class App extends Component {
   state = {
     books: [],
-    query: ''
+    query: '',
+    searchedBooks: []
   }
 
   componentDidMount() {
@@ -23,15 +24,30 @@ class App extends Component {
       .then(() => this.fetchData())
   }
 
-  updateQuery = query => {
-    this.setState(() => ({
-      query
-    }))
+  clearQuery = () => {
+    this.updateQuery('')
   }
-  
-    clearQuery = () => {
-      this.updateQuery('')
-   }
+
+  updateSearchedBooks = query => {
+    query === '' ?
+    this.setState({
+      searchedBooks: []
+    }) :
+    BooksAPI.search(query)
+      .then(books => {
+        this.setState({
+          searchedBooks: books
+        })
+      })
+  }
+
+  updateQuery = query => {
+    this.setState({
+      query
+    })
+
+    this.updateSearchedBooks(query)
+  }
 
   fetchData = () => {
     BooksAPI.getAll()
@@ -43,13 +59,9 @@ class App extends Component {
   }
 
   render() {
-    const { query, books } = this.state
+    const { query, books, searchedBooks } = this.state
 
-    const showingBooks = query === ''
-      ? books
-      : books.filter(b => (
-        b.title.toLowerCase().includes(query.toLowerCase()) || b.authors.join('').toLowerCase().includes(query.toLowerCase())
-      ))
+    const showingBooks = query === '' ? books : searchedBooks
 
     return (
       <div className='App'>
@@ -76,14 +88,9 @@ class App extends Component {
                 query={query}
                 onUpdateQuery={this.updateQuery}
                 onClearQuery={this.clearQuery}
-              />
-              {
-                query !== '' &&
-                <Shelf
-                showingBooks={showingBooks}
+                showingBooks={searchedBooks}
                 onUpdateBook={this.updateBook}
-                />
-              }
+              />
             </>
           )}
         />
