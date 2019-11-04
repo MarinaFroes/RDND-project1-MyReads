@@ -7,14 +7,16 @@ function Shelf({ showingBooks, onUpdateBook }) {
   return (
     <section>
       {
-        SHELVES_TYPES.map( shelf => (
-          <div key={shelf[1]} className='shelf'>
-            <h1 className='shelf-title'>{shelf[0]}</h1>
-            <div className='books-container'>
-              {showingBooks.filter(book => book.shelf === shelf[1]).map(book => <Book key={book.id} book={book} onUpdateBook={onUpdateBook} currentShelf={shelf[1]}/>)}
+        SHELVES_TYPES.filter(shelf => shelf[1] !== 'none').map(shelf => (
+            <div key={shelf[1]} className='shelf'>
+              <h1 className='shelf-title'>{shelf[0]}</h1>
+              <div className='books-container'>
+                {
+                  showingBooks.filter(book => book.shelf === shelf[1]).map(book => <Book key={book.id} book={book} onUpdateBook={onUpdateBook} currentShelf={shelf[1]} />)
+                }
+              </div>
             </div>
-          </div>
-         )
+          )
         )
       }
     </section>
