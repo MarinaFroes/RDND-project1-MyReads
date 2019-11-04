@@ -2,11 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { SHELVES_TYPES } from '../utils/SHELVES_TYPES'
 
-function DropDown({ book, onUpdateBook, currentShelf }) {
+function ShelfSelection({ book, onUpdateBook, currentShelf }) {
   return (
-    <div className='drop-down-container'>
+    <div className='shelf-selection-container'>
       <select
-        className='drop-down-menu'
+        className='shelf-selection-menu'
         role="menubar"
         onChange={event => onUpdateBook(book, event.target.value)}
         value={currentShelf}
@@ -25,9 +25,9 @@ function DropDown({ book, onUpdateBook, currentShelf }) {
   )
 }
 
-export default DropDown;
+export default ShelfSelection;
 
-DropDown.propTypes = {
+ShelfSelection.propTypes = {
   book: PropTypes.object.isRequired,
   onUpdateBook: PropTypes.func.isRequired,
   currentShelf: PropTypes.string.isRequired

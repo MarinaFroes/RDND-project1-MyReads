@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import DropDown from './DropDown'
+import ShelfSelection from './ShelfSelection'
 
 function Book({ book, onUpdateBook, currentShelf }) {
   return (
@@ -14,7 +14,7 @@ function Book({ book, onUpdateBook, currentShelf }) {
       </div>
       <h2 className='book-title'>{book.title}</h2>
       <p><strong>Authors:</strong> {book.authors.join(', ')}</p>
-      <DropDown
+      <ShelfSelection
         book={book}
         onUpdateBook={onUpdateBook}
         currentShelf={currentShelf}
