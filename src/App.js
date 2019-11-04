@@ -25,7 +25,7 @@ class App extends Component {
 
   updateQuery = query => {
     this.setState(() => ({
-      query: query.trim()
+      query
     }))
   }
   
