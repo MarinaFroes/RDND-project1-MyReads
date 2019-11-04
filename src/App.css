@@ -47,6 +47,7 @@ header h1 {
   flex-direction: column;
   flex-wrap: wrap;
   width: 14rem;
+  height: 28rem;
   margin: 1rem;
   padding: 2rem;
   box-shadow: 4px 3px 14px 0 rgba(179,179,204,1);
@@ -63,12 +64,12 @@ header h1 {
 }
 
 .book-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .book-info > p {
-  font-size: 1rem;
-  margin: 1rem 0;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
 }
 
 /* ShelfSelection Component */
@@ -121,6 +122,14 @@ form a {
   border: 1px solid #e6e6e6;
   background-color: #e6e6e6;
   border-radius: 5px 0 0 5px;
+}
+
+.show-search-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
 }
 
 /* Footer Component */
