@@ -83,15 +83,13 @@ class App extends Component {
           exact
           path='/search'
           render={() => (
-            <>
-              <SearchPage
-                query={query}
-                onUpdateQuery={this.updateQuery}
-                onClearQuery={this.clearQuery}
-                showingBooks={searchedBooks}
-                onUpdateBook={this.updateBook}
-              />
-            </>
+            <SearchPage
+              query={query}
+              onUpdateQuery={this.updateQuery}
+              onClearQuery={this.clearQuery}
+              showingBooks={searchedBooks}
+              onUpdateBook={this.updateBook}
+            />
           )}
         />
         <Footer />
