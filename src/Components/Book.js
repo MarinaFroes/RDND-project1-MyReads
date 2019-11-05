@@ -3,12 +3,16 @@ import PropTypes from 'prop-types'
 import ShelfSelection from './ShelfSelection'
 
 function Book({ book, onUpdateBook, currentShelf }) {
+  const dummyCover = 'https://dummyimage.com/128x193/e6e6e6/000.jpg&text=No+image+found';
+  let cover;
+  (book.imageLinks === undefined) ? cover = dummyCover : cover = `${book.imageLinks.smallThumbnail}`
+
   return (
     <section className='book-info'>
       <div className='cover-container'>
         <img
           className='cover-img'
-          src={book.imageLinks.smallThumbnail}
+          src={cover}
           alt=''
         />
       </div>
