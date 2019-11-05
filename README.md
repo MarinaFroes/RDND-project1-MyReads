@@ -15,7 +15,7 @@ This MyReads App is the first project of the Udacity React Developer Nanodegree 
 
 ## Udacity Specification
 
-- In the MyReads project, I had to create a bookshelf app that allows me to select and categorize books I have read, am currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that you will use to persist information as you interact with the application.
+- In MyReads project, I had to create a bookshelf app that allows me to select and categorize books I have read, am currently reading, or want to read. The project emphasizes using React to build the application and provides an API server and client library that you will use to persist information as you interact with the application.
  
 ## Udacity Requirements
 
