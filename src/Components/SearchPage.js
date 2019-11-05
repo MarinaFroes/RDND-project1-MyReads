@@ -18,12 +18,14 @@ function SearchPage({query, onUpdateQuery, onClearQuery, showingBooks, onUpdateB
       {showingBooks.length > 0 && (   
         <div className='show-search-results'>
           {showingBooks.map(book =>
-            (<Book
+            (
+              <Book
               key={book.id}
               book={book}
               onUpdateBook={onUpdateBook}
               currentShelf='none'
-            />)
+              />
+            )
           )}
         </div>
       ) 
