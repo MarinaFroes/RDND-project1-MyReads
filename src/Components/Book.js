@@ -5,7 +5,7 @@ import ShelfSelection from './ShelfSelection'
 function Book({ book, onUpdateBook, currentShelf }) {
   const dummyCover = 'https://dummyimage.com/128x193/e6e6e6/000.jpg&text=No+image+found';
   let cover;
-  (book.imageLinks === undefined) ? cover = dummyCover : cover = `${book.imageLinks.smallThumbnail}`
+  (book.imageLinks === undefined) ? (cover = dummyCover) : (cover = `${book.imageLinks.smallThumbnail}`)
 
   return (
     <section className='book-info'>
