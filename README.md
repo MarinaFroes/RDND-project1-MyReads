@@ -55,10 +55,11 @@ $ npm install
 $ npm start
 ```  
 
-## References
+## References and Resources
 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-- Shadow generator: [CSSmatic](https://cssmatic.com/box-shadow)
-- Font Awesome icons: [React Icons](https://react-icons.netlify.com/#/icons/fa)
+- [CSSmatic](https://cssmatic.com/box-shadow)
+- [React Icons](https://react-icons.netlify.com/#/icons/fa)
+- [Dummy Image](https://dummyimage.com/)
 - [React Documentation](https://reactjs.org)
 - [MDN Documentation](https://developer.mozilla.org)
