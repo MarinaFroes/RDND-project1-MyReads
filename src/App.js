@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import './App.css'
 import * as BooksAPI from './utils/BooksAPI'
-import Shelf from './Components/Shelf'
-import SearchIcon from './Components/SearchIcon'
+import MainPage from './Components/MainPage'
 import SearchPage from './Components/SearchPage'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
@@ -34,9 +33,9 @@ class App extends Component {
       searchedBooks: []
     }) :
     BooksAPI.search(query)
-      .then(books => {
+      .then(searchedBooks => {
         this.setState({
-          searchedBooks: books
+          searchedBooks
         })
       })
   }
@@ -70,13 +69,10 @@ class App extends Component {
           exact
           path='/'
           render={() => (
-            <main>
-              <Shelf
-                showingBooks={showingBooks}
-                onUpdateBook={this.updateBook}
-              />
-              <SearchIcon />
-            </main>
+            <MainPage
+              showingBooks={showingBooks}
+              onUpdateBook={this.updateBook}
+            />
           )}
         />
         <Route
