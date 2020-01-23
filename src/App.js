@@ -77,7 +77,7 @@ class App extends Component {
   render() {
     const { query, books, searchedBooks } = this.state
 
-    const showingBooks = query === '' ? books : searchedBooks
+    // const showingBooks = query === '' ? books : searchedBooks
 
     return (
       <div className='App'>
@@ -87,7 +87,7 @@ class App extends Component {
           path='/'
           render={() => (
             <MainPage
-              showingBooks={showingBooks}
+              books={books}
               onUpdateBook={this.updateBook}
             />
           )}
@@ -100,7 +100,8 @@ class App extends Component {
               query={query}
               onUpdateQuery={this.updateQuery}
               onClearQuery={this.clearQuery}
-              showingBooks={searchedBooks}
+              searchedBooks={searchedBooks}
+              books={books}
               onUpdateBook={this.updateBook}
             />
           )}
