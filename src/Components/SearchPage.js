@@ -24,7 +24,7 @@ function SearchPage({query, onUpdateQuery, onClearQuery, searchedBooks, books, o
               key={book.id}
               book={book}
               onUpdateBook={onUpdateBook}
-              currentShelf="none"
+              currentShelf={book.shelf || "none"}
             />
           ))}
         </div>
