@@ -15,12 +15,29 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchData()
+    BooksAPI.getAll().then(books => {
+      this.setState({
+        books
+      })
+    })
+    // this.fetchData()
   }
 
   updateBook = (book, shelf) => {
     BooksAPI.update(book, shelf)
-      .then(() => this.fetchData())
+      .then(() =>
+        BooksAPI.get(book.id)
+      )
+      .then((updatedBook) => {
+        this.setState(prevState => ({
+          books: [
+            updatedBook,
+            ...prevState.books.filter(
+              filteredBook => filteredBook.id !== book.id
+            )
+          ]
+        }))
+      })
   }
 
   clearQuery = () => {
@@ -48,14 +65,14 @@ class App extends Component {
     this.updateSearchedBooks(query)
   }
 
-  fetchData = () => {
-    BooksAPI.getAll()
-      .then(books => {
-        this.setState({
-          books
-        })
-      })
-  }
+  // fetchData = () => {
+  //   BooksAPI.getAll()
+  //     .then(books => {
+  //       this.setState({
+  //         books
+  //       })
+  //     })
+  // }
 
   render() {
     const { query, books, searchedBooks } = this.state
