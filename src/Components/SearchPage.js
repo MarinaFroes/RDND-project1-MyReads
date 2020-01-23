@@ -22,7 +22,7 @@ function SearchPage({ query, onUpdateQuery, onClearQuery, searchedBooks, books, 
           {
             searchedBooks.map(searchedBook => {
               
-              books.map(book => {
+              books.forEach(book => {
                   if (book.id === searchedBook.id) {
                     searchedBook.shelf = book.shelf
                   }
