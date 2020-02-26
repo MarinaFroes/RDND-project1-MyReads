@@ -20,7 +20,6 @@ class App extends Component {
         books
       })
     })
-    // this.fetchData()
   }
 
   updateBook = (book, shelf) => {
@@ -65,19 +64,8 @@ class App extends Component {
     this.updateSearchedBooks(query)
   }
 
-  // fetchData = () => {
-  //   BooksAPI.getAll()
-  //     .then(books => {
-  //       this.setState({
-  //         books
-  //       })
-  //     })
-  // }
-
   render() {
     const { query, books, searchedBooks } = this.state
-
-    // const showingBooks = query === '' ? books : searchedBooks
 
     return (
       <div className='App'>
