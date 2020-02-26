@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b76a9389a796f8b5ba54def50048b203",
+    "revision": "47927fa6c52bf12ceb39e98fd6fe4d30",
     "url": "/RDND-project1-MyReads/index.html"
   },
   {
-    "revision": "ca85cc007cf0a3adb11c",
+    "revision": "b61b7e4dc6b8bf37c864",
     "url": "/RDND-project1-MyReads/static/css/main.81a92611.chunk.css"
   },
   {
-    "revision": "4d8f1361f05fe8e8a9a8",
-    "url": "/RDND-project1-MyReads/static/js/2.b138b847.chunk.js"
+    "revision": "5c3e062727b1ec1d36a5",
+    "url": "/RDND-project1-MyReads/static/js/2.05a9e6ff.chunk.js"
   },
   {
     "revision": "783efe56c297789f679b639c509e9a30",
-    "url": "/RDND-project1-MyReads/static/js/2.b138b847.chunk.js.LICENSE"
+    "url": "/RDND-project1-MyReads/static/js/2.05a9e6ff.chunk.js.LICENSE"
   },
   {
-    "revision": "ca85cc007cf0a3adb11c",
-    "url": "/RDND-project1-MyReads/static/js/main.1bc68c03.chunk.js"
+    "revision": "b61b7e4dc6b8bf37c864",
+    "url": "/RDND-project1-MyReads/static/js/main.f5a53dd9.chunk.js"
   },
   {
     "revision": "0fb07e79b41d8d7acdbf",
