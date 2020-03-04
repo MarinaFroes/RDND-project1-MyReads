@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/MarinaFroes/RDND-project1-MyReads" target="_blank"><img src="./src/icons/mylogo.svg" alt="logo" title="logo" width="80"></a></p>
+<p align="center"><a href="https://marinafroes.github.io/RDND-project1-MyReads/#/" target="_blank"><img src="./src/icons/mylogo.svg" alt="logo" title="logo" width="80"></a></p>
 <h1 align="center">My Reads: A Book Tracking App</h1>
 
 ## Udacity React Developer Nanodegree Project 1 - Introduction
