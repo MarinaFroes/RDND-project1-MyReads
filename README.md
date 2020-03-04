@@ -11,7 +11,7 @@ This MyReads App is the first project of the Udacity React Developer Nanodegree 
 
 ## Overview
 
-![screenshot](./src/utils/screenshot.png)
+<p align="center"><img src="./src/utils/screenshot.png" alt="screenshot"/></p>
 
 ## Udacity Specification
 
