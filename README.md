@@ -1,6 +1,11 @@
 
-![logo](./src/icons/mylogo.svg) 
-# MyReads: A Book Tracking App  
+<!-- ![logo](./src/icons/mylogo.svg)  -->
+
+<p align="center"><a href="https://cogoport.github.io/cogo-toast/" target="_blank"><img src="./src/icons/mylogo.svg" alt="logo" title="logo" width="120"></a></p>
+<h1 align="center">My Reads</h1>
+
+<!-- 
+# MyReads: A Book Tracking App   -->
 ## Udacity React Developer Nanodegree Project 1 - Introduction
 
 This MyReads App is the first project of the Udacity React Developer Nanodegree and follows the "MyReads project rubric" and all the style guides provided by Udacity:
