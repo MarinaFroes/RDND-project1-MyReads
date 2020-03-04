@@ -1,11 +1,6 @@
-
-<!-- ![logo](./src/icons/mylogo.svg)  -->
-
 <p align="center"><a href="https://github.com/MarinaFroes/RDND-project1-MyReads" target="_blank"><img src="./src/icons/mylogo.svg" alt="logo" title="logo" width="80"></a></p>
 <h1 align="center">My Reads: A Book Tracking App</h1>
 
-<!-- 
-# MyReads: A Book Tracking App   -->
 ## Udacity React Developer Nanodegree Project 1 - Introduction
 
 This MyReads App is the first project of the Udacity React Developer Nanodegree and follows the "MyReads project rubric" and all the style guides provided by Udacity:
